@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-import views
+from .views import index, sayHello
 
 urlpatterns = [
-    path('', views.index),
-    path('<name:str>', views.sayHello)
+    path('', index),
+    path('<str:name>', sayHello)
 ]
