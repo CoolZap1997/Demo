@@ -13,5 +13,5 @@ class Person(models.Model):
     last_name = models.CharField(max_length=30)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     email = models.CharField(max_length=50, unique=True)
-    pincode = models.CharField(max_length=4)
+    pincode = models.CharField(max_length=6)
     phone = models.BigIntegerField(max_length=10)

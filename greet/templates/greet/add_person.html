@@ -1,0 +1,15 @@
+{% extends "greet/base.html" %}
+
+{% block title %}
+Add Person
+{% endblock %}
+
+
+{% block body %}
+
+<form action="addperson" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Add Person">
+</form>
+{% endblock %}
